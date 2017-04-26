@@ -1,0 +1,114 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url("/wp-content/themes/understrap/fonts/Museo300-Regular.otf") format("opentype");
+}
+
+
+$font-family-sans-serif: 'Museo', 'Raleway', sans-serif;
+$brand-primary:         #7D6157;
+$color1:         #7D6157;
+$color2: #AF866E;
+$color3: #e6dcd0;
+$color4: #463d2e;
+$color5: #C7B9A3;
+$page-bg-color: #ffffff;
+$btn-bg-hover: #ffffff;
+
+// Basics of a navbar
+$navbar-height:                    100px;
+$logo-height:                       70px;
+$navbar-margin-bottom:             0;
+$navbar-border-radius:             0px;
+
+
+$homepage-img-height: 60vh;
+$bg-body: url('/wp-content/uploads/9946347_l.jpg');
+
+$padding-xs: 5px;
+$padding-sm: 10px;
+$padding-md: 25px;
+$padding-lg: 50px;
+
+$space-xs: 1%;
+$space-sm: 5%;
+$space-md: 50%;
+$space-lg: 100%;
+
+$font-xs: 9pt;
+$font-sm: 12pt;
+$font-md: 14pt;
+$font-lg: 20pt;
+
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true;
+$moz: true;
+$ms: true;
+$o: true;
+
+
+
+
+/////************** effects vars ************//////////
+
+// DEFAULT OPTIONS
+
+// Prefix for Hover class names
+$nameSpace: 'hvr' !default;
+
+// Durations
+$fastDuration: .1s !default;
+$mediumDuration: .3s !default;
+$slowDuration: .5s !default;
+
+// Colors
+$primaryColor: #e1e1e1 !default;
+$secondaryColor: #666 !default;
+$highlightColor: #ccc !default;
+$activeColor: $btn-bg-hover !default;
+$shadowColor: rgba(0, 0, 0, .6) !default;
+
+// Speech bubbles options
+$tipWidth: 10px !default;  //the width of the speech bubble tip
+$tipHeight: 10px !default; //the height of the speech bubble tip
+$tipColor: $primaryColor !default;
+
+// Arrows options
+$spaceBetweenTextAndArrows: 2.2em !default;
+
+// Curl dimensions
+$curlWidth: 25px !default;
+$curlHeight: 25px !default;
+
+// Curl colors
+$revealAreaColor: white !default;    // reveal area behind the curl
+$curlLineColor: #aaa !default;       // crease line
+$curlTransitionColor: #ccc !default;	// color transitioning from crease line to final color
+$curlLastColor: white !default;		// final color of the back of the curl
+
+// Compile with or without classes
+$includeClasses: true !default;
